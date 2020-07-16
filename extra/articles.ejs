@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-color:#000000;">
+    <h2 style="text-align:center;color:#ff0403"><u>ARTICLES</u></h2>
+    <a href="/ticker">TICKER</a>
+    <div style="color:#ffffff;">
+    LAST UPDATED- <span id="demo"></span>
+  </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+<%  data.forEach((article)=>{ %>
+<%  if(article.image && article.title){ %>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+  <div class="card" style="height:28em;margin-bottom:1em;">
+  <img class="card-img-top"  src=<%=article.image%> alt="Card image" style="width:100%" >
+  <div class="card-body">
+    <h4 class="card-title"><%=article.title%></h4>
+    <p class="card-text"><%=article.content%></p>
+    <a href="<%=article.link%>" target="_blank" class="btn btn-primary stretched-link">Read More..</a>
+  </div>
+  </div>
+</div>
+      <%  } %>
+<%  }); %>
+</div>
+</div>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+  </body>
+</html>

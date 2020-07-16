@@ -1,0 +1,38 @@
+<%- include('partials/header3.ejs') %>
+  <div class="container" style="padding-top:1.5em;">
+    <section class="row mt-5 text-center">
+      <div class="col-md-6 m-auto">
+        <h1><i class="fas fa-newspaper fa-2x"></i></h1>
+        <h2 class="display-6">Add Websites to Crawl!!!</h2>
+        <p class="lead">
+          NOTE: - Enter specific and correct path and class/id names!!<br>
+          Before class names use "." & before id names use "#", keep each other separated with spaces!!
+        </p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" name="url" id="url" class="form-control" placeholder="URL of the website"
+              required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="article" id="article" class="form-control" placeholder="Path to the article list(e.g- .yfinlist-table tbody tr)" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="link" id="link" class="form-control" placeholder="Path to get link of each article(e.g- .yfinlist-table tbody tr)" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="image" id="image" class="form-control" placeholder="Path to get image url of each article(e.g- .yfinlist-table tbody tr)" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="title" id="title" class="form-control" placeholder="Path to get the title of each article(e.g- .yfinlist-table tbody tr)" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="content" id="content" class="form-control" placeholder="Path to get the short content of each article(e.g- .yfinlist-table tbody tr)" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            ADD!
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+<%- include('partials/footer.ejs') %>

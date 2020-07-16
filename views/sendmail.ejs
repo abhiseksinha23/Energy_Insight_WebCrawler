@@ -1,0 +1,26 @@
+<%- include('partials/header3.ejs') %>
+  <div class="container" style="padding-top:3em;">
+    <section class="row mt-5 text-center">
+      <div class="col-md-6 m-auto">
+        <h1 class="display-5" style="color:#ffffff;">Mail for subscribers</h1><br>
+        <h5 style="color:#ffffff;"><%=msg%></h5>
+        <form action="/sendmails" method="POST">
+          <div class="form-group">
+            <input type="text" name="topic" id="topic" class="form-control" placeholder="Topic/keyword(eg-coal)"
+              required />
+              <p style="color:#ffffff;">NOTE:- Subscribe for one topic at once(for all topics use "all" keyword.)</p>
+          </div>
+          <div class="form-group">
+            <textarea name="text" rows="8" cols="80" class="form-control"placeholder="Article/Update" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success btn-lg">
+            SEND!!
+          </button>
+          <button type="reset" class="btn btn-warning  btn-lg">
+            RESET
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+<%- include('partials/footer.ejs') %>

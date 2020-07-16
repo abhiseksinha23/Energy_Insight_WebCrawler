@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WIPRO ENERGY INSIGHT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+    /* Center the loader */
+    #loader {
+      position:fixed;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-top: 16px solid blue;
+      border-right: 16px solid green;
+      border-bottom: 16px solid red;
+      border-left: 16px solid #22FF32;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    #text {
+      position:fixed;
+      left: 35%;
+      top: 50%;
+      z-index: 1;
+      width: 35em;
+      height: 35em;
+      margin: -75px 0 0 -75px;
+      width: 35em;
+      height: 35em;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 }
+      to { bottom:0px; opacity:1 }
+    }
+
+    @keyframes animatebottom {
+      from{ bottom:-100px; opacity:0 }
+      to{ bottom:0; opacity:1 }
+    }
+
+    #myDiv {
+      text-align: center;
+      display: none;
+    }
+    body{
+      /* width: 90%; */
+      background: url('https://img.freepik.com/free-vector/dark-wavy-background-gradient_23-2148385755.jpg?size=626&ext=jpg');
+      background-size:150%;
+      background-position:center;
+      repeat: no-repeat;
+    </style>
+
+  </head>
+  <body  style="color:#ffffff;" onload="myFunction()">
+
+<div id="loader"></div>
+<div class="container" style="text-align:center;justify-content:center;" id="text">
+<div style="display:none;width:100%" id="myDiv" class="animate-bottom"  >
+  <div>
+  <h2>Welcome to WIPRO ENERGY INSIGHT!!!!</h2>
+  <a href="/home"><button class="btn btn-large btn-success"  style="color:#ffffff;">READ ARTICLES</button></a>
+</div>
+</div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 6500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+<footer class="page-footer font-small blue" style="color:#ffffff;">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="/" style="color:#ffffff;">WIPRO ENERGY INSIGHT</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+</html>

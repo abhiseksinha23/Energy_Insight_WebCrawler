@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TRICKER</title>
+    <style>
+      table, th,td{
+        text-align:center;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+  <table style="width:97%;margin:1em;">
+    <thead>
+      <tr>
+        <th>S.No</th>
+      <th>NAME</th>
+      <!-- <th>DATE</th> -->
+      <th>PRICE</th>
+      <!-- <th>UNIT</th> -->
+        </tr>
+      <thead>
+      <tbody>
+
+    <% data.forEach((element)=>{ %>
+      <tr>
+        <td><%=element.sno%></td>
+        <td><%=element.name%></td>
+        <!-- <td><%=element.date%></td> -->
+        <td><%=element.price%></td>
+        <!-- <td><%=element.unit%></td> -->
+      </tr>
+  <%  });%>
+
+    </tbody>
+  </table>
+  </body>
+</html>
