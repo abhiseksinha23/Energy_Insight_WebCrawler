@@ -5,5 +5,5 @@ It displays all the articles in the form of cards containing image, title, date,
 It has a number of functionalities-
 1. Ticker - On the top, Showing the price of different commodities at World trade market of that day.
 2. Filter - To filter articles and read articles based on any topic or keyword or date.
-3. Subscription - Users can subscripe to the website to recieve updates related to their selected topics.
-4. Admin Panel - Contains list of sites, list of subscribers with their selected topics and a mail option to send updates to users subscribed to the topic update is related to, or to send mail to all users using special keyword.
+3. Subscription - Users can subscripe to the website to recieve updates related to their selected topics. A confirmation mail will be send automatically to the subscriber confirming his subscription.
+4. Admin Panel - Contains list of sites, list of subscribers with their selected topics and a mail option to send updates to users subscribed to the topic update is related to, or to send mail to all users using special keyword, can send 1000(s) of subscribers a single mail using a single send.
